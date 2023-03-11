@@ -321,6 +321,10 @@ img{
 
 /*----------------Skills Section------------------------------------------------------*/
 
+#skills{
+    padding-top: 10%;
+}
+
 #skills-container{
     margin-top: 5%;
     display: flex;

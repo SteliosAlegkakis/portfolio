@@ -319,6 +319,64 @@ img{
 
 /*----------------End of about section------------------------------------------------*/
 
+/*----------------Skills Section------------------------------------------------------*/
+
+#skills-container{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-title{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-title{
+    font-size: x-large;
+}
+
+.skill-icon{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    padding: 2%;
+    margin-right: 2%;
+    background-color: antiquewhite;
+}
+
+.skill{
+    margin: 2%;
+    width: 100%;
+    min-height: 50vh;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    border-radius: 5%;
+    transition: .3s ease box-shadow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+.skills-list{
+    margin: 5%;
+    list-style: none;
+}
+
+.skill-item{
+    font-size: medium;
+}
+
+/*----------------End of Skills Section-----------------------------------------------*/
+
 /*----------------contact section-----------------------------------------------------*/
 
 #contact .contact{
@@ -482,6 +540,15 @@ img{
 
     .contact-items{
         flex-direction: column;
+    }
+
+    #skills-container{
+        flex-direction: column;
+    }
+
+    .skill{
+        width: 80%;
+        min-height: 40vh;
     }
 }    
 

@@ -15,6 +15,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    text-align: left;
+}
+
 .container {
     min-height: 100vh;
     width: 100%;
@@ -35,7 +39,6 @@ img{
     font-size: 4rem;
     font-weight: 300;
     color: black;
-    margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
@@ -71,9 +74,6 @@ img{
     min-height: 8vh;
     background-color: #000000;
     background-image: linear-gradient(147deg, #000000 0%, #434343 74%); 
-    /*background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);*/
-    /*background-color: rgba(32 ,30 ,30 ,0.24);
-    transition: 0.3s ease background-color;*/
 }
 
 #header .brand h1{
@@ -182,81 +182,6 @@ img{
 
 /*---------------------End of hero section--------------------------------------*/
 
-/*---------------------Services sectionn----------------------------------------
-
-#services .services{
-    flex-direction: column;
-    text-align: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-
-#services .service-top p{
-    font-size: 1.4rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 300px;
-    letter-spacing: 0.05rem;
-}
-
-#services .service-top{
-    width: 500px;
-    margin: 0 auto;
-}
-
-#services .service-bottom{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#services .service-item{
-    flex-basis: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    border-radius: 10px;
-    background-image: url(./img/projects.jpg);
-    background-size: cover;
-    margin:10px 5%;
-    z-index: 1;
-    color: white;
-    position: relative;
-}
-
-#services .service-item::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: .7;
-    border-radius: 10px;
-    z-index: -1;
-}
-
-#services .service-bottom .icon{
-    height: 70px;
-    width: 70px;
-    margin-bottom: 20px;
-}
-
-#services .service-item h2{
-    margin-bottom: 10px;
-    font-size: 2rem;
-}
-
-#services .service-item p{
-    font-size: 1.4rem;
-}
---------------------End of Services section------------------------------------------*/
 
 /*---------------------Projects Section------------------------------------------------*/
 
@@ -399,13 +324,21 @@ img{
 #contact .contact{
     flex-direction: column;
     max-width: 1200px;
-    margin: 0 auto;
     width: 98%;
 }
 
+#contact-title{
+    margin: 5%;
+}
+
 #contact .contact-items{
-    width: 400px;
-    margin: auto;
+    width: 100%;
+}
+
+.contact-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #contact .contact-item{
@@ -415,7 +348,7 @@ img{
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    margin: 30px;
+    margin: 2%;
     margin-top: 0px;
     align-items: center;
     flex-direction: column;
@@ -450,16 +383,21 @@ img{
 /*-----------------footer section---------------------------------------------------*/
 
 #footer{
+    margin-top: 10%;
+    max-height: 10%;
     background-color: #000000;
     background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
-    /*background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);*/
 }
 
-#footer .footer{
-    min-height: 200px;
+#footer-title{
+    font-size: small;
+}
+
+.footer{
+    min-height: 5%;
     flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 10px;
+    padding-top: 5%;
+    padding-bottom: 2%;
 }
 
 #footer h2{
@@ -473,7 +411,7 @@ img{
 
 #footer .social-icon{
     display: flex;
-    margin-bottom: 30px;
+    margin: 2%;
 }
 
 #footer .social-item{
@@ -528,11 +466,29 @@ img{
 
 /*end of keyframes*/
 
+/*Media Query for mobile phones*/
+@media only screen and (max-width: 768px){
+    p{
+        font-size: large;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    #title{
+        font-size: x-large;
+    }
+
+    .contact-items{
+        flex-direction: column;
+    }
+}    
+
 /*Media Query for tablet*/
 @media only screen and (min-width: 768px){
-    .cta{
-        font-size: 2.5rem;
-        padding:20px 60px;
+    body{
+        font-size: 1.5rem;
     }
     h1 .section-title{
         font-size: 6rem;
@@ -550,11 +506,6 @@ img{
     #hero h1{
         font-size: 5rem;
     }
-
-    /*#services .service-bottom .service-item{
-        flex-basis: 45%;
-        margin: 2.5%;
-    }*/
 
     #projects .project-item{
         flex-direction: row;
@@ -621,11 +572,7 @@ img{
 /*end of media query for tablet*/
 
 /*media query for desktop*/
-@media only screen and (min-width:1200px) {
-    /*#services .service-bottom .service-item{
-        flex-basis: 22%;
-        margin: 1.5%;
-    }*/
+/* @media only screen and (min-width:1200px) {
 
     #header .brand{
         font-size: 2rem;
@@ -638,5 +585,5 @@ img{
     p{
         font-size: 6rem;
     }
-}
+} */
 /*end of media query for desktop*/

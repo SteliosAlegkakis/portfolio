@@ -284,9 +284,15 @@ img{
     margin-bottom: 20px;
 }
 
+#my-image{
+    border: 10px solid white;
+    object-fit: cover;
+}
+
 #about .col-left .about-img{
     position: relative;
     border: 10px solid white;
+    margin: 3%;
     height: 100%;
     width: 100%;
 }
@@ -294,8 +300,10 @@ img{
 #about .col-left .about-img::after{
     content: '';
     position: absolute;
-    left: -33px;
-    top: 19px;
+    /* left: -33px; */
+    left: -15%;
+    /* top: 19px; */
+    top: 10%;
     height: 98%;
     width: 98%;
     z-index: -1;
@@ -310,11 +318,11 @@ img{
     size: 1.8rem;
     font-weight: 500;
     letter-spacing: .2rem;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
 }
 
 #about .col-right p{
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 
 /*----------------End of about section------------------------------------------------*/

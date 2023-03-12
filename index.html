@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>My website</title>
+    <script type="text/javascript" media="screen and (max-width : 768px)" src="app.js"></script>
 </head>
 <body>
     <!--Header section-->
@@ -12,18 +13,19 @@
     <section id="header">
         <div class="header container">
             <div class="nav-bar">
-                <div class="brand">
-                    <h1 id="title"><span>S</span>telios <span>A</span>legkakis</h1>
+                <div class="brand"  id="title">
+                    <h1><span>S</span>telios <span>A</span>legkakis</h1>
                 </div>
                 <div class="nav-list">
                     <ul>
-                        <li><a href="#hero" data-after="Home">Home</a></li>
-                        <li><a href="#about" data-after="About">about</a></li>
-                        <li><a href="#skills" data-after="Skills">Skills</a></li>
-                        <li><a href="#projects" data-after="Projects">Projects</a></li>
-                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
+                <img id="menu_button" onclick="showMenu()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVR4nO3WsQkAIBRDwey/cgrtbcTqg9xBBkj3EgAgabt+WL45AgAAV9PVKuMr4wEAeDWd3zK+Mh4ActoUYp195tU38AAAAABJRU5ErkJggg==">
             </div>
         </div>
     </section>
@@ -205,5 +207,19 @@
     </section>
 
     <!--end of footer-->
+
+    <section id="mobile_menu">
+        <div id="close">
+            <img id="close_button" onclick="hideMenu()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nO3ZTQqDMBCGYU/RSq9Yj1uwPc1bRBcirWicv4T5Vm6UeVCTGdJ1mUwm00yAJ9AHqKOfaim9eWDO6IlhRkw1TBlKHnADXssDPsBDpdL9Gu6rGt7FNXhikEJ4YpBGeGDQQlhi0EZYYMwQmhhzhAbGDSGJcUdIYMIgrmDCIUowYRFnMOERRzDVIPYw1SH+zBDj5tp9ULvyZup6E+tsPiezEUA0TXxa/PixI4zNp7K3OlWD4cASGx7DiX0iLIaCzS4chgs7dhgMAm2HOwbB3skNg0IDaI5BsYs1w2DQiqONsZwn0MJ4DEVIYzwnO6QwEcZTJDDNHL01cxiayWQyXcR8AfkY5euVO0c7AAAAAElFTkSuQmCC">        </div>
+        <div id="mobile-nav">
+            <ul id="mobile-list">
+                <li><a href="#hero" class="menu-item" onclick="hideMenu()" >Home</a></li>
+                <li><a href="#about" class="menu-item" onclick="hideMenu()">About</a></li>
+                <li><a href="#skills" class="menu-item" onclick="hideMenu()">Skills</a></li>
+                <li><a href="#projects" class="menu-item" onclick="hideMenu()">Projects</a></li>
+                <li><a href="#contact" class="menu-item" onclick="hideMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>

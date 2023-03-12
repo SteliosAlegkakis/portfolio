@@ -32,7 +32,7 @@ p{
 img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
 }
 
 /*for every section-title to appear with red and white letters*/
@@ -237,15 +237,14 @@ img{
 
 }
 
-#projects .project-info h1{
+/* #projects .project-info h1{
     font-size: 4rem;
     font-weight: 400;
-}
+} */
 
 #projects .project-info h2{
-    font-size: 1.8rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 3%;
     font-weight: 500;
 }
 
